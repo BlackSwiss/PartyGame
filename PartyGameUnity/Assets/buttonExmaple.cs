@@ -22,6 +22,8 @@ public class buttonExmaple : MonoBehaviour {
     //Button being used
     private Button button;
 
+
+
     int count = 0;
 
     private void Awake()
