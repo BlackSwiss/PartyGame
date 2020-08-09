@@ -12,7 +12,9 @@ public class buttonExmaple : MonoBehaviour {
 
     System.Random r = new System.Random();
 
-    
+    public GameObject[] buttonPics = new GameObject[] { };
+
+    public GameObject currentButton;
 
     public KeyCode key;
 
@@ -30,6 +32,40 @@ public class buttonExmaple : MonoBehaviour {
         */
 
         joystickArray = joystickArray.OrderBy(x => r.Next()).ToArray();
+        //Display first button
+        switch (joystickArray[0])
+        {
+            case "Joystick Button 0":
+                currentButton = buttonPics[0];
+                currentButton.SetActive(true);
+                break;
+
+            case "Joystick Button 1":
+                currentButton = buttonPics[1];
+                currentButton.SetActive(true);
+                break;
+
+            case "Joystick Button 2":
+                currentButton = buttonPics[2];
+                currentButton.SetActive(true);
+                break;
+
+            case "Joystick Button 3":
+                currentButton = buttonPics[3];
+                currentButton.SetActive(true);
+                break;
+
+            case "Joystick Button 4":
+                currentButton = buttonPics[4];
+                currentButton.SetActive(true);
+                break;
+
+            case "Joystick Button 5":
+                currentButton = buttonPics[5];
+                currentButton.SetActive(true);
+                break;
+        }
+
         Debug.Log(joystickArray[0]);
     }
 
@@ -38,20 +74,54 @@ public class buttonExmaple : MonoBehaviour {
     void Start () {
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-        
+
+    // Update is called once per frame
+    void Update()
+    {
+
         if (Input.GetButtonDown(joystickArray[0]))
         {
+            currentButton.SetActive(false);
+
             count++;
             button.onClick.Invoke();
-             Debug.Log("Pressed " + count);
-            //Debug.Log(joystickArray[0]);
+            Debug.Log("Pressed " + count);
+            
             joystickArray = joystickArray.OrderBy(x => r.Next()).ToArray();
-            Debug.Log(joystickArray[0]);
+            Debug.Log(joystickArray[0] + " " + count);
+            switch (joystickArray[0])
+            {
+                case "Joystick Button 0":
+                    currentButton = buttonPics[0];
+                    currentButton.SetActive(true);
+                    break;
 
+                case "Joystick Button 1":
+                    currentButton = buttonPics[1];
+                    currentButton.SetActive(true);
+                    break;
+
+                case "Joystick Button 2":
+                    currentButton = buttonPics[2];
+                    currentButton.SetActive(true);
+                    break;
+
+                case "Joystick Button 3":
+                    currentButton = buttonPics[3];
+                    currentButton.SetActive(true);
+                    break;
+
+                case "Joystick Button 4":
+                    currentButton = buttonPics[4];
+                    currentButton.SetActive(true);
+                    break;
+
+                case "Joystick Button 5":
+                    currentButton = buttonPics[5];
+                    currentButton.SetActive(true);
+                    break;
+            }
         }
-	}
+    }
 
 }
