@@ -702,6 +702,7 @@ GameObject:
   - component: {fileID: 1013104874}
   - component: {fileID: 1013104873}
   - component: {fileID: 1013104872}
+  - component: {fileID: 1013104877}
   - component: {fileID: 1013104876}
   m_Layer: 5
   m_Name: Button
@@ -861,6 +862,18 @@ MonoBehaviour:
   m_DefaultActionMap: Controller
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1013104877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013104870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce81276e3f88cf4982498c880c42c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018966306
 GameObject:
   m_ObjectHideFlags: 0

@@ -82,7 +82,7 @@ public class newButtonExample : MonoBehaviour
     {
         if (Time.time > nextPressTime)
         {
-            if (currNum == randomNum)
+            if (buttonNum == randomNum)
             {
                 //Increase score
                 count++;
@@ -92,7 +92,7 @@ public class newButtonExample : MonoBehaviour
                 currentButton.SetActive(false);
 
                 //Randomize to next button
-                randomNum = Random.Range(0, 5);
+                randomNum = Random.Range(0, 6);
                 Debug.Log(randomNum + " " + count);
 
                 //Display random numbers button again
@@ -129,14 +129,12 @@ public class newButtonExample : MonoBehaviour
                         currentButton.SetActive(true);
                         break;
                 }
-                //Set current num to invalid num so it will not carry over incase of duplicates
-                currNum = -1;
             }
 
-            //If they do not match or is not the number for preventing dups
-            else if (currNum != randomNum || currNum != -1)
+            //If they do not match 
+            else if (buttonNum != randomNum)
             {
-                Debug.Log("Curr num" + currNum);
+                Debug.Log("Curr num" + buttonNum);
                 Debug.Log("Wrong button Pressed, Cooldown Started");
                 //Wait current time +5 seconds
                 nextPressTime = Time.time + cooldownTime;
