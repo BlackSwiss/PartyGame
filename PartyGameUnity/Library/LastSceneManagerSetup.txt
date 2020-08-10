@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Tron.unity
+=======
+- path: Assets/1stscene.unity
+>>>>>>> 9c2690df86e7168f7296619f8c2a28567840f4d7
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -5,40 +5,40 @@ using UnityEngine;
 public class controllerInputFunc : MonoBehaviour
 {
     //Methods for button inputs
-    private int OnA()
+    private void OnA()
     {
         Debug.Log("Pressed A");
-        return 0;
+        SendMessageUpwards("onButtonPress", 0, SendMessageOptions.RequireReceiver);
     }
 
-    private int OnB()
+    private void OnB()
     {
         Debug.Log("Pressed B");
-        return 1;
+        SendMessageUpwards("onButtonPress", 1);
     }
 
-    private int OnX()
+    private void OnX()
     {
         Debug.Log("Pressed X");
-        return 2;
+        SendMessageUpwards("onButtonPress", 2);
     }
 
-    private int OnY()
+    private void OnY()
     {
         Debug.Log("Pressed Y");
-        return 3;
+        SendMessageUpwards("onButtonPress", 3);
     }
 
-    private int OnLB()
+    private void OnLB()
     {
         Debug.Log("Pressed LB");
-        return  4;
+        SendMessageUpwards("onButtonPress", 4);
     }
 
-    private int OnRB()
+    private void OnRB()
     {
         Debug.Log("Pressed RB");
-        return  5;
+        SendMessageUpwards("onButtonPress", 5);
     }
 
 }
