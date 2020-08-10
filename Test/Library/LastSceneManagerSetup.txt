@@ -1,0 +1,5 @@
+sceneSetups:
+- path: C:/Users/Chloe Culver/Desktop/Unity_NewInputSystem_LocalCo-op-master/Unity_NewInputSystem_LocalCo-op-master/Setting_Up_Input_System/Assets/Scenes/SampleScene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

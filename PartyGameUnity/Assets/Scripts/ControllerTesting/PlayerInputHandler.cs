@@ -1,41 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
-//This script gets player Input and sends it over to the controller input script
+
 public class PlayerInputHandler : MonoBehaviour
 {
-    private Mover mover;
+    //ref to playerInput
     private PlayerInput playerInput;
-    [SerializeField]
-    private int playerIndex = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    private void Awake()
+    private Mover mover; //ref to movement script
+    void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
+        var movers = FindObjectsOfType<Mover>(); //Get player objects
         var index = playerInput.playerIndex;
-        
+        mover = movers.FirstOrDefault(m => m.GetPlayerIndex() == index);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        var x = Input.GetAxisRaw("Horizontal");
-        var y = Input.GetAxisRaw("Vertical");
-        mover.SetInputVector(new Vector2(x, y));
-    }
-    public int GetPlayerIndex()
-    {
-        return playerIndex;
-    }
-    //Function from contrller
+
+    //Function that is called by controller
     public void OnMove(CallbackContext context)
     {
-       mover.SetInputVector(context.ReadValue<Vector2>()); //reads controller 
+        if(mover !=null)
+            mover.SetInputVector(context.ReadValue<Vector2>());
     }
 }
-

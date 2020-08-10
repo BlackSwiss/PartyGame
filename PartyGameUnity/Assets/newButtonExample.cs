@@ -30,7 +30,7 @@ public class newButtonExample : MonoBehaviour
     //Cant do random in start
     void Awake()
     {
-        buttonEvent.OnbuttonPressEnter += onButtonPress;
+        //buttonEvent.OnbuttonPressEnter += onButtonPress;
         randomNum = Random.Range(0, 5);
         currNum = -1;
         Debug.Log(randomNum);
