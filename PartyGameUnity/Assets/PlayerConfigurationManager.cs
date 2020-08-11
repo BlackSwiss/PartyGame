@@ -11,13 +11,14 @@ public class PlayerConfigurationManager : MonoBehaviour
     private List<PlayerConfiguration> PlayerConfigs; //List of Players
 
     [SerializeField]
-    private int MaxPlayers = 2;
+    private int MaxPlayers = 2; //Maximum number of players
 
-    //Use singleton to assure this class will exist in any scene and there will only be one
+    //Use singleton instance variabele
     public static PlayerConfigurationManager Instance { get; private set; }
 
     private void Awake()
     {
+        //Create singleton and Don't Destroy on Load
       if(Instance != null)
         {
             Debug.Log("Creating an Instance");
@@ -29,17 +30,31 @@ public class PlayerConfigurationManager : MonoBehaviour
             PlayerConfigs = new List<PlayerConfiguration>();
         }
     }
+    //Customization of player colors
     public void SetPlayerColor(int index, Material Color)
     {
         PlayerConfigs[index].PlayerMaterial = Color;
     }
 
+    //When all players are ready, load the scene we want
     public void ReadyPlayer(int index)
     {
         PlayerConfigs[index].isReady = true;
         if(PlayerConfigs.Count == MaxPlayers && PlayerConfigs.All(p => p.isReady ==true)) //if we have all the players and they are ready
         {
             SceneManager.LoadScene("Multiplayer Scene");
+        }
+    }
+
+    //Handles player join
+    public void HandlePlayerJoin(PlayerInput pi)
+    {
+        Debug.Log("Player joined: " + pi.playerIndex + 1);
+        
+        if(!PlayerConfigs.Any(p => p.PlayerIndex == pi.playerIndex)) // if player has not been added, add player
+        {
+            pi.transform.SetParent(transform);
+            PlayerConfigs.Add(new PlayerConfiguration(pi));
         }
     }
 
