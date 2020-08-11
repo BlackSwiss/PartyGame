@@ -42,7 +42,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         PlayerConfigs[index].isReady = true;
         if(PlayerConfigs.Count == MaxPlayers && PlayerConfigs.All(p => p.isReady ==true)) //if we have all the players and they are ready
         {
-            SceneManager.LoadScene("Multiplayer Scene");
+            SceneManager.LoadScene("Tron");
         }
     }
 

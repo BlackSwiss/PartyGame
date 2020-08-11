@@ -24,8 +24,8 @@ public class PlayerTronDamage : MonoBehaviour
 
         if (other.gameObject.tag == "Player" && numCollisionEvents > 5) //if more than five particles collide with the Player object, kill it
         {
-            Debug.Log("Ouchies");
-            other.SetActive(false);
+            Debug.Log("I've hit something: " + other.gameObject.name); //
+            //other.SetActive(false);
 
 
         }

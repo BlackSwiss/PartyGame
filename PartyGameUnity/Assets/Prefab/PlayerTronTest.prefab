@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6517583717186924421}
   m_Layer: 8
   m_Name: PlayerTronTest
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

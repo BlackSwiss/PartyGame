@@ -41,7 +41,7 @@ public class Mover : MonoBehaviour
             Vector3 movement = new Vector3(inputVector.x, 0, inputVector.y) * moveSpeed * Time.deltaTime;
             transform.LookAt(movement + transform.position); //rotates player object in the direction it's moving to
             transform.Translate(movement, Space.World);
-            controller.Move(movement); //Moves the character from character contrller (may not be necessary)
+           // controller.Move(movement); //Moves the character from character contrller (may not be necessary)
         }
     }
 }

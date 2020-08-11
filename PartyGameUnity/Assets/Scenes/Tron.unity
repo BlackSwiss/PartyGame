@@ -378,6 +378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4961008132146931169, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4961008132146931171, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
       propertyPath: playerIndex
       value: 1
@@ -431,8 +435,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 4961008132146931172, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
-    - {fileID: 4961008132146931170, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
 --- !u!1 &544758357 stripped
 GameObject:
@@ -448,7 +452,7 @@ CharacterController:
   m_GameObject: {fileID: 544758357}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Height: 1
   m_Radius: 0.5
@@ -457,6 +461,22 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &544758359
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544758357}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &544758363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4961008132146931176, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
@@ -827,6 +847,14 @@ PrefabInstance:
       propertyPath: EmissionModule.rateOverDistance.scalar
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 4222986303264207455, guid: 2ec76ffa7ce08884fa9df3eb7f4a761f, type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222986303264207455, guid: 2ec76ffa7ce08884fa9df3eb7f4a761f, type: 3}
+      propertyPath: CollisionModule.quality
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4222986303264207457, guid: 2ec76ffa7ce08884fa9df3eb7f4a761f, type: 3}
       propertyPath: m_Name
       value: TrailTest
@@ -858,7 +886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4961008132146931176, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 1.827
       objectReference: {fileID: 0}
     - target: {fileID: 4961008132146931176, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -897,8 +925,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 4961008132146931172, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
-    - {fileID: 4961008132146931170, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8710de419d6b2554c8af1c19d7d106c7, type: 3}
 --- !u!1001 &6517583716922051614
 PrefabInstance:
