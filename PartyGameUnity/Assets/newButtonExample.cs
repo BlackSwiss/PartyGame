@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class newButtonExample : MonoBehaviour
 {
+    //Parabola locations
+    public GameObject Start;
+    public GameObject Peak;
+    public GameObject End;
+
+
     //Random number corresponding to buttons
     //{ A, B, X, Y, LB, RB}
     int randomNum;
@@ -84,6 +90,18 @@ public class newButtonExample : MonoBehaviour
         {
             if (buttonNum == randomNum)
             {
+                //Do animation
+                GetComponent<ParabolaController>().FollowParabola();
+                //For some reason start and end are swapped? Fixed in gameobject settings
+                //Swap start with end of curve
+                Start.transform.position = End.transform.position;
+                //Move end to top of other platform
+                End.transform.position = new Vector3(End.transform.position.x + 5, End.transform.position.y + 2, 0);
+
+                //Peak will always be both (Start+End) /2, Added 2 to y to create a curvy peak
+                Peak.transform.position = new Vector3((Start.transform.position.x + End.transform.position.x)/2,
+                    (Start.transform.position.y + End.transform.position.y) / 2 +2, 0);
+
                 //Increase score
                 count++;
                 Debug.Log("Correct button Pressed, Score:" + count);
