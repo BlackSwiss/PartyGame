@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/1stscene.unity
+=======
+- path: Assets/Scenes/Multiplayer Screen.unity
+>>>>>>> 7f1b17e43afbb3edfdc25653f911ceca221d07f6
   isLoaded: 1
   isActive: 1
   isSubScene: 0
