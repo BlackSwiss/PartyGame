@@ -8,14 +8,36 @@ using static UnityEngine.InputSystem.InputAction;
 public class PlayerInputHandler : MonoBehaviour
 {
     //ref to playerInput
-    private PlayerInput playerInput; //The literal player Input of the controller
+    private PlayerConfiguration playerInput; //The literal player Input of the controller
     private Mover mover; //ref to movement script
+    [SerializeField]
+    private Controller controls; //.references to controller C# class we made earlier
+
+    public GameObject PlayerAvatr;
     void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
-        var movers = FindObjectsOfType<Mover>(); //Get player objects
-        var index = playerInput.playerIndex; //Get index of the Contrller
-        mover = movers.FirstOrDefault(m => m.GetPlayerIndex() == index); //organize all contrllers by index;
+
+        mover = GetComponent<Mover>(); //Get Player prefab
+        controls = new Controller(); //creates a new contrller object
+
+    }
+    public void InitializePlayer(PlayerConfiguration pc)
+    {
+        playerInput = pc; //assign player controller to object
+        //TODO:
+        //Add code to set player avatar.
+        //Should look something like this:
+        // pc.Avatar = PlayerAvatr;
+        playerInput.Input.onActionTriggered += Input_onActionTriggered;
+    }
+
+    private void Input_onActionTriggered(CallbackContext obj)
+    {
+        //Check what action was perfromed
+        if (obj.action.name == controls.PlayerMovement.Movement.name){
+            OnMove(obj);
+
+        }
     }
 
     //Function that is called by controller

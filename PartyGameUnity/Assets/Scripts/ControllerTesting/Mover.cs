@@ -11,8 +11,7 @@ using UnityEngine;
  * */
 public class Mover : MonoBehaviour
 {
-    [SerializeField]
-    private int playerIndex = 0; //The controller num that is connected to this object
+
     [SerializeField]
     private float moveSpeed = 5.81f; //How fast the object is moving
     //Move direction
@@ -29,10 +28,6 @@ public class Mover : MonoBehaviour
         inputVector = direction; //Setting the stick controls to the direction we want the player to move in
     }
 
-    public int GetPlayerIndex() //return index of contrller (Player 1, Player 2)
-    {
-        return playerIndex;
-    }
     // Update is called once per frame
     void Update()
     {

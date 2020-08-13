@@ -58,7 +58,11 @@ public class PlayerConfigurationManager : MonoBehaviour
         }
     }
 
-
+    //returns player info to the smaller Game Manager
+    public List<PlayerConfiguration> GetPlayerConfigs()
+    {
+        return PlayerConfigs;
+    }
 }
 
 //Sub class to store player data
