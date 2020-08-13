@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3148295061985203142}
   - component: {fileID: 3148295061985203141}
   m_Layer: 0
-  m_Name: PlayerInput
+  m_Name: PlayerInputTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,6 +85,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 85949a03-baaa-439d-9b95-cafee4870f6a
     m_ActionName: PlayerMovement/New action[/XInputControllerWindows/leftStick,/XInputControllerWindows/leftStick,/DualShock4GamepadHID/leftStick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 878e950d-5082-4dba-b3f8-8854ba5723af
+    m_ActionName: PlayerMovement/Select[/DualShock4GamepadHID/buttonSouth,/XInputControllerWindows/buttonSouth,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: PlayerMovement
