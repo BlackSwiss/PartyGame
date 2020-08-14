@@ -35,6 +35,14 @@ public class PlayerSetUpMenuController : MonoBehaviour
         }
     }
 
+    public void Select()
+    {
+        //Test function
+        readyPanel.SetActive(true);
+        readyButton.Select(); //Focus the ready button for the controller
+        //Set Menu panel inactive
+        menuPanel.SetActive(false);
+    }
     //This function will need to be altered to handle the Assets like Player Avatars
     public void SetColor (Material Color) 
     {

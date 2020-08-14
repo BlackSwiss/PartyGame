@@ -40,7 +40,7 @@ public class PlayerConfigurationManager : MonoBehaviour
     public void ReadyPlayer(int index)
     {
         PlayerConfigs[index].isReady = true;
-        if(PlayerConfigs.Count == MaxPlayers && PlayerConfigs.All(p => p.isReady ==true)) //if we have all the players and they are ready
+        if(PlayerConfigs.All(p => p.isReady ==true)) //if we have all the players and they are ready
         {
             SceneManager.LoadScene("Tron");
         }
@@ -77,5 +77,6 @@ public class PlayerConfiguration
     public PlayerInput Input { get; set; } //Input of player object
     public int PlayerIndex { get; set; } //Player 1, Player 2, etc.
     public bool isReady { get; set; } //Is player ready to play?
-    public Material PlayerMaterial {get; set;} // Player Color (will be changed when assets are available
+    public Material PlayerMaterial {get; set;} // Player Color (will be changed when assets are available)
+    public GameObject PlayerCharacter { get; set; }
 }
