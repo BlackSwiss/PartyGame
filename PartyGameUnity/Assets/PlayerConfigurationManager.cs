@@ -29,6 +29,8 @@ public class PlayerConfigurationManager : MonoBehaviour
             DontDestroyOnLoad(Instance); //keeps object from beiung destroyed across scenes
             PlayerConfigs = new List<PlayerConfiguration>();
         }
+      //The following line of code will be used to change the map controls for each mini- game
+     //   ControllerMapTest =  Instance.GetComponent<PlayerInputManager>().playerPrefab;
     }
     //Customization of player colors
     public void SetPlayerColor(int index, Material Color)
@@ -44,7 +46,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         {
             SceneManager.LoadScene("Tron");
         }
-       // Instance.GetComponent<PlayerInputManager>().playerPrefab = ControllerMapTest;
+      
     }
 
     //Handles player join
