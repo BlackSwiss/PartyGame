@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class PlayerConfigurationManager : MonoBehaviour
 {
     private List<PlayerConfiguration> PlayerConfigs; //List of Players
-
+    public GameObject ControllerMapTest;
     [SerializeField]
     private int MaxPlayers = 2; //Maximum number of players
 
@@ -44,6 +44,7 @@ public class PlayerConfigurationManager : MonoBehaviour
         {
             SceneManager.LoadScene("Tron");
         }
+       // Instance.GetComponent<PlayerInputManager>().playerPrefab = ControllerMapTest;
     }
 
     //Handles player join

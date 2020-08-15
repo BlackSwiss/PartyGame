@@ -542,9 +542,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1073028603868693605, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+      propertyPath: playerSpawns.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073028603868693605, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+      propertyPath: playerSpawns.Array.data[2]
+      value: 
+      objectReference: {fileID: 1073028602666875517}
+    - target: {fileID: 1073028603868693605, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+      propertyPath: playerSpawns.Array.data[3]
+      value: 
+      objectReference: {fileID: 1073028602666875517}
     - target: {fileID: 1073028603868693611, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
       propertyPath: m_Name
       value: Level Initalizer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+--- !u!4 &1073028602666875517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1073028602370334057, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+  m_PrefabInstance: {fileID: 1073028602666875516}
+  m_PrefabAsset: {fileID: 0}

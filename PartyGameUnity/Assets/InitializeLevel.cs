@@ -5,10 +5,11 @@ using UnityEngine;
 public class InitializeLevel : MonoBehaviour
 {
     [SerializeField]
-    private Transform[] playerSpawns;
+    private Transform[] playerSpawns; //Setting up premade spawn locations
 
     [SerializeField]
-    private GameObject playerPrefab;
+    private GameObject playerPrefab; //Set player character
+
     // Start is called before the first frame update
     void Start()
     {
