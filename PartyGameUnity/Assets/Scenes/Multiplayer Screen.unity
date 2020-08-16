@@ -346,6 +346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chr_Pirates_EnglishSoldier_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1575747651902506, guid: af78860beff5fa24e84ca4d5a750fc40, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4905981279159210, guid: af78860beff5fa24e84ca4d5a750fc40, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.04
@@ -498,6 +502,36 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1753836983012634006, guid: d1ad69b46c4e33546a5594f32a1e0e9c, type: 3}
   m_PrefabInstance: {fileID: 659357324}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &740513131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 740513132}
+  m_Layer: 0
+  m_Name: Player 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &740513132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740513131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.118288, y: 17.59, z: -0.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &787140852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -508,6 +542,10 @@ PrefabInstance:
     - target: {fileID: 1093078912564410, guid: c96cb725af321b7449f624f9d3003cc5, type: 3}
       propertyPath: m_Name
       value: Chr_Western_Cowboy_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1093078912564410, guid: c96cb725af321b7449f624f9d3003cc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4316376952530692, guid: c96cb725af321b7449f624f9d3003cc5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -788,6 +826,10 @@ PrefabInstance:
     - target: {fileID: 1770108808143198, guid: dab40ee2f32c1e84189486698e98ebd0, type: 3}
       propertyPath: m_Name
       value: Chr_Samurai_SamuraiWarrior_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1770108808143198, guid: dab40ee2f32c1e84189486698e98ebd0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4765429378377458, guid: dab40ee2f32c1e84189486698e98ebd0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1115,6 +1157,10 @@ PrefabInstance:
     - target: {fileID: 1404823412658210, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6, type: 3}
       propertyPath: m_Name
       value: Chr_Adventure_Peasant_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1404823412658210, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4497262683522610, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6, type: 3}
       propertyPath: m_LocalPosition.x

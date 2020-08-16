@@ -18,4 +18,6 @@ public class SpawnPlayerSetUpMenu : MonoBehaviour
             menu.GetComponent<PlayerSetUpMenuController>().SetPlayerIndex(input.playerIndex);
         }
     }
+
+
 }

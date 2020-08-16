@@ -18,11 +18,7 @@ public class Mover : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero; //Where we move in the world
     private Vector2 inputVector = Vector2.zero; // Stick input of the X and Y values on a controller
 
-    private CharacterController controller;
-    private void Awake()
-    {
-        controller = GetComponent<CharacterController>(); //Grab character controller
-    }
+
     public void SetInputVector(Vector2 direction)
     {
         inputVector = direction; //Setting the stick controls to the direction we want the player to move in

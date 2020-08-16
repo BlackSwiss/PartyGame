@@ -33,9 +33,10 @@ public class PlayerConfigurationManager : MonoBehaviour
      //   ControllerMapTest =  Instance.GetComponent<PlayerInputManager>().playerPrefab;
     }
     //Customization of player colors
-    public void SetPlayerColor(int index, Material Color)
+    public void SetPlayerCharacter(int index, GameObject obj)
     {
-        PlayerConfigs[index].PlayerMaterial = Color;
+        PlayerConfigs[index].PlayerCharacter = obj;
+        Debug.Log("Player Character: " + PlayerConfigs[index].PlayerCharacter.name);
     }
 
     //When all players are ready, load the scene we want

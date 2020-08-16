@@ -230,6 +230,12 @@ MonoBehaviour:
   readyPanel: {fileID: 1753836983108267576}
   menuPanel: {fileID: 1753836984281194100}
   readyButton: {fileID: 1753836984274896667}
+  PlayersIdol:
+  - {fileID: 1404823412658210, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6, type: 3}
+  obj: {fileID: 0}
+  Prev: {fileID: 0}
+  Next: {fileID: 0}
+  spawn: {fileID: 0}
 --- !u!1 &1753836983108267576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1062,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1753836984204227686}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1753836983012634003}
+        m_TargetAssemblyTypeName: PlayerSetUpMenuController, Assembly-CSharp
+        m_MethodName: Left
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1753836984258312392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1194,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1753836984258312389}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1753836983012634003}
+        m_TargetAssemblyTypeName: PlayerSetUpMenuController, Assembly-CSharp
+        m_MethodName: Right
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1753836984274896665
 GameObject:
   m_ObjectHideFlags: 0
