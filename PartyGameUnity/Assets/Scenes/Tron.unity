@@ -498,6 +498,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1073028602370334057, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073028603065086589, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1073028603868693604, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -554,6 +562,10 @@ PrefabInstance:
       propertyPath: playerSpawns.Array.data[3]
       value: 
       objectReference: {fileID: 1073028602666875517}
+    - target: {fileID: 1073028603868693605, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 2865669821131950754, guid: e63fca0395c590d419331e311e189c11, type: 3}
     - target: {fileID: 1073028603868693611, guid: cdc220ca07de0ac45853cc7ad3e05d9e, type: 3}
       propertyPath: m_Name
       value: Level Initalizer

@@ -83,4 +83,5 @@ public class PlayerConfiguration
     public bool isReady { get; set; } //Is player ready to play?
     public Material PlayerMaterial {get; set;} // Player Color (will be changed when assets are available)
     public GameObject PlayerCharacter { get; set; }
+    public bool IsActive { get; set; }
 }
