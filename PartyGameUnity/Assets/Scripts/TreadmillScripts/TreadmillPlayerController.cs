@@ -7,17 +7,19 @@ public class TreadmillPlayerController : MonoBehaviour
 {
     Vector2 movement;
     float moveSpeed = 10f;
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         Move();
+
     }
 
     private void Move()
@@ -33,6 +35,7 @@ public class TreadmillPlayerController : MonoBehaviour
     }
     private void OnA()
     {
+        rb.AddForce(Vector3.up * 250);
         Debug.Log("Pressed A");
     }
     void OnX()
