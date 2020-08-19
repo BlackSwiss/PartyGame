@@ -1,17 +1,3 @@
-{
-    "name": "Unity.CollabProxy.Editor",
-    "references": [
-        "Unity.Settings.Editor"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": false,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:25568b1fcbe3fc9ff388c452fecd857e626b371dd96258271c2dc14385cf550a
+size 408

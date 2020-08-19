@@ -1,24 +1,3 @@
-#if UNITY_EDITOR
-using UnityEditor;
-using UnityEditor.IMGUI.Controls;
-
-namespace UnityEngine.InputSystem.Editor
-{
-    /// <summary>
-    /// Property drawer for <see cref="InputAction"/>.
-    /// </summary>
-    [CustomPropertyDrawer(typeof(InputAction))]
-    internal class InputActionDrawer : InputActionDrawerBase
-    {
-        protected override TreeViewItem BuildTree(SerializedProperty property)
-        {
-            return InputActionTreeView.BuildWithJustBindingsFromAction(property);
-        }
-
-        protected override string GetSuffixToRemoveFromPropertyDisplayName()
-        {
-            return " Action";
-        }
-    }
-}
-#endif // UNITY_EDITOR
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc558f6165a708a647158c54088d956bd277cd5842691f522e284b03d22c64a5
+size 661

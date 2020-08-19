@@ -1,29 +1,3 @@
-using System;
-using System.Collections.Generic;
-
-namespace Unity.Cloud.Collaborate.Models.Structures
-{
-    internal enum HistoryEntryStatus
-    {
-        Ahead,
-        Current,
-        Behind
-    }
-
-    internal interface IHistoryEntry
-    {
-        HistoryEntryStatus Status { get; }
-
-        string RevisionId { get; }
-
-        string AuthorName { get; }
-
-        string Message { get; }
-
-        DateTimeOffset Time { get; }
-
-        IReadOnlyList<IChangeEntry> Changes { get; }
-
-        string GetGotoText();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:96cc7117f2c1116a4805378a54fc6c10923f5d31feba8c121e850e1ce16a4403
+size 551

@@ -1,9 +1,3 @@
-<engine:UXML xmlns:engine="UnityEngine.UIElements" xmlns:collab="Unity.Cloud.Collaborate.Components">
-
-    <engine:VisualElement class="error-view__container">
-
-        <collab:AlertBox />
-
-    </engine:VisualElement>
-
-</engine:UXML>
+version https://git-lfs.github.com/spec/v1
+oid sha256:debf21788c2052f6dedc1b80689138903ffcd9a3bae1877974a6601b7f174204
+size 243

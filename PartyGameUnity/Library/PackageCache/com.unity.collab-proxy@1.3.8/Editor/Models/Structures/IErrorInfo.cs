@@ -1,30 +1,3 @@
-namespace Unity.Cloud.Collaborate.Models.Structures
-{
-    internal interface IErrorInfo
-    {
-        int Code { get; }
-        ErrorInfoPriority Priority { get; }
-        ErrorInfoBehavior Behaviour { get; }
-        string Message { get; }
-        string ShortMessage { get; }
-        string CodeString { get; }
-    }
-
-    internal enum ErrorInfoPriority
-    {
-        Critical = 0,
-        Error,
-        Warning,
-        Info,
-        None
-    }
-
-    internal enum ErrorInfoBehavior
-    {
-        Alert = 0,
-        Automatic,
-        Hidden,
-        ConsoleOnly,
-        Reconnect
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d47d134cb680a41d5c388cf4bdf35af0c3440be91a606cc3951763b18814c74
+size 623

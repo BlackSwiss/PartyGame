@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0cde6650b2b8806dbbfd9212a0939bc93140ee26bde65994ab076cb7fe5d61ec
-size 639
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CameraSwap : MonoBehaviour
+{
+    public Camera MainCamera;
+    public Camera PlayerAreaCam;
+    // Start is called before the first frame update
+    void Start()
+    {
+        PlayerAreaCam.enabled = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void swap()
+    {
+        MainCamera.enabled = false;
+        MainCamera.GetComponent<AudioListener>().enabled = false;
+        PlayerAreaCam.enabled = true;
+        Debug.Log("This script is running");
+    }
+}

@@ -1,16 +1,3 @@
-// using UnityEditor;
-// using UnityEditor.SettingsManagement;
-// using UnityEngine;
-//
-// namespace Unity.Cloud.Collaborate.Settings
-// {
-//     internal class CollabSetting<T> : UserSetting<T>
-//     {
-//         public CollabSetting(string key, T value, SettingsScope scope = SettingsScope.Project)
-//             : base(CollabSettingsManager.instance, key, value, scope)
-//         {}
-//
-//         CollabSetting(UnityEditor.SettingsManagement.Settings settings, string key, T value, SettingsScope scope = SettingsScope.Project)
-//             : base(settings, key, value, scope) { }
-//     }
-// }
+version https://git-lfs.github.com/spec/v1
+oid sha256:227109d6632eee4e13a18d9c4f433bd24e37c3db4cc5eaccde399aed2d71bb4f
+size 618

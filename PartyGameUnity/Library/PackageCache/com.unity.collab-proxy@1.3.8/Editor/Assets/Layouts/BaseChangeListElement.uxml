@@ -1,10 +1,3 @@
-<UXML xmlns="UnityEngine.UIElements">
-    <VisualElement class="base-change-list-element__container row">
-        <VisualElement class="base-change-list-element__icons" />
-        <VisualElement style="flex: 1 1 auto; flex-direction: row;">
-            <Label class="base-change-list-element__file-name" />
-            <Label class="base-change-list-element__file-path" />
-        </VisualElement>
-        <VisualElement class="base-change-list-element__buttons" />
-    </VisualElement>
-</UXML>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8f3f8e0cfbd408ecd096b5b87a772aad7fe6aaea13f63f404524e34e22d9d6c
+size 505

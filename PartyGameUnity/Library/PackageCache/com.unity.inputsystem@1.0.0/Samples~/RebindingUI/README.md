@@ -1,5 +1,3 @@
-This sample demonstrates how to use the Input System APIs to set up a rebinding UI. The main file is [RebindActionUI](./RebindActionUI.cs) which, aside from serving as an example, contains a reusable `MonoBehaviour` component for composing rebinding UIs. The [RebindUIPrefab](./RebindUIPrefab.prefab) contains a ready-made prefab that can be used as a simple drop-in setup for rebinding an individual action.
-
- To demonstrate how to use images instead of textual display strings, take a look at [GamepadIconsExample](./GamepadIconsExample.cs).
-
- The icons used in the sample are taken from [Free Prompts Pack](https://opengameart.org/content/free-keyboard-and-controllers-prompts-pack) made by Nicolae Berbece.
+version https://git-lfs.github.com/spec/v1
+oid sha256:9dddace950d9d5f17916b85edb4063cfb97314fe373fe9ad3cbeac33bd1a8d64
+size 711

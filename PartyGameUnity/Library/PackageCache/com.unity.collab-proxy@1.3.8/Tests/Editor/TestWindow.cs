@@ -1,21 +1,3 @@
-using System;
-using Unity.Cloud.Collaborate.Assets;
-using Unity.Cloud.Collaborate.UserInterface;
-using UnityEditor;
-using UnityEngine.UIElements;
-
-namespace Unity.Cloud.Collaborate.Tests
-{
-    internal class TestWindow : EditorWindow
-    {
-        void OnEnable()
-        {
-            var root = rootVisualElement;
-            root.styleSheets.Add(AssetDatabase.LoadAssetAtPath<StyleSheet>(CollaborateWindow.MainStylePath));
-
-            root.AddToClassList(EditorGUIUtility.isProSkin
-                ? UiConstants.ussDark
-                : UiConstants.ussLight);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:326f7c5a6d2975a89b3c149be80928ec7dee954d2a6364c11ef912b304bb7d84
+size 604

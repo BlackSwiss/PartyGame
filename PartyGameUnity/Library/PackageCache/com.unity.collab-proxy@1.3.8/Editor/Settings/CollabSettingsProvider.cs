@@ -1,23 +1,3 @@
-// using JetBrains.Annotations;
-// using UnityEditor;
-// using UnityEditor.SettingsManagement;
-//
-// namespace Unity.Cloud.Collaborate.Settings
-// {
-//     [UsedImplicitly]
-//     internal class CollabSettingsProvider
-//     {
-//         const string k_PreferencesPath = "Preferences/Collaborate";
-//
-//         [SettingsProvider]
-//         [UsedImplicitly]
-//         static SettingsProvider CreateSettingsProvider()
-//         {
-//             var provider = new UserSettingsProvider(k_PreferencesPath,
-//                 CollabSettingsManager.instance,
-//                 new [] { typeof(CollabSettingsProvider).Assembly });
-//
-//             return provider;
-//         }
-//     }
-// }
+version https://git-lfs.github.com/spec/v1
+oid sha256:04bd1fa420842536c895ee7d895acbcef49a0aa1e9792f460e791af8ca9d13f4
+size 714

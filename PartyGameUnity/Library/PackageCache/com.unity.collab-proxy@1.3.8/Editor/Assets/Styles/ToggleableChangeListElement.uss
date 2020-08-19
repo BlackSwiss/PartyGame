@@ -1,6 +1,3 @@
-/* ToggleableChangeEntry Styles */
-
-.toggleable-change-list-element__toggle {
-    padding: 0;
-    margin: 0 var(--half-standard-margin) 0 var(--quarter-standard-margin);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:24dca93a7938f9a4cf20205611dc90aa5f86d2385dcbf787e1a15f56ce7cc7d8
+size 178

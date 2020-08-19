@@ -1,23 +1,3 @@
-namespace Unity.Cloud.Collaborate.Models.Structures
-{
-    internal interface IProgressInfo
-    {
-        string Title { get; }
-
-        string Details { get; }
-
-        int CurrentCount { get; }
-
-        int TotalCount { get; }
-
-        string LastErrorString { get; }
-
-        ulong LastError { get; }
-
-        bool CanCancel { get; }
-
-        bool PercentageProgressType { get; }
-
-        int PercentageComplete { get; }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c63d1a05e96c67ed24efc3c2a44df375e06426483d5a8c946a0b5e08886db9a1
+size 454

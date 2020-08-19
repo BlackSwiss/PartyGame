@@ -1,21 +1,3 @@
-using Unity.Cloud.Collaborate.Presenters;
-using Unity.Cloud.Collaborate.Views;
-
-namespace Unity.Cloud.Collaborate.Tests.Presenters
-{
-    internal class TestStartView : IStartView
-    {
-        public bool buttonVisible;
-
-        public IStartPresenter Presenter { get; set; }
-
-        public string Text { get; set; }
-
-        public string ButtonText { get; set; }
-
-        public void SetButtonVisible(bool isVisible)
-        {
-            buttonVisible = isVisible;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0cd13bc6608f16772dd4b7ec850b21646e58b2bf959bf696feca44e6cbdb2471
+size 508
