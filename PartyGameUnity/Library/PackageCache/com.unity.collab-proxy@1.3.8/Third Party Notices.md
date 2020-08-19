@@ -1,7 +1,3 @@
-This package contains third-party software components governed by the license(s) indicated below:
----------
-Component Name: [provide component name]
-
-License Type: [Provide license type, i.e. "MIT", "Apache 2.0"]
-
-[Provide License Details]
+version https://git-lfs.github.com/spec/v1
+oid sha256:8977e36502b3828a22113b53f68ca32a38497521cd2b89cb21f5ac06f4f35345
+size 247

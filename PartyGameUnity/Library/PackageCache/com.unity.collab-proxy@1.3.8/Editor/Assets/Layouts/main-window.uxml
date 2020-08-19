@@ -1,7 +1,3 @@
-<engine:UXML xmlns:engine="UnityEngine.UIElements">
-
-    <engine:VisualElement class="main-window__container grow">
-
-    </engine:VisualElement>
-
-</engine:UXML>
+version https://git-lfs.github.com/spec/v1
+oid sha256:31e546668b8808a95d5d1a5078f3a87f0a873604b4a6e99a20d3ec5e0493026c
+size 168

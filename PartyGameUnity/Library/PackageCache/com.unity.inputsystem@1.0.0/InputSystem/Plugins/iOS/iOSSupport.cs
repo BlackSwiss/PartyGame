@@ -1,34 +1,3 @@
-#if UNITY_EDITOR || UNITY_IOS || UNITY_TVOS
-using UnityEngine.InputSystem.Layouts;
-
-namespace UnityEngine.InputSystem.iOS
-{
-#if UNITY_DISABLE_DEFAULT_INPUT_PLUGIN_INITIALIZATION
-    public
-#else
-    internal
-#endif
-    static class iOSSupport
-    {
-        public static void Initialize()
-        {
-            InputSystem.RegisterLayout<iOSGameController>("iOSGameController",
-                matches: new InputDeviceMatcher()
-                    .WithInterface("iOS")
-                    .WithDeviceClass("iOSGameController"));
-
-            InputSystem.RegisterLayout<XboxOneGampadiOS>("XboxOneGampadiOS",
-                matches: new InputDeviceMatcher()
-                    .WithInterface("iOS")
-                    .WithDeviceClass("iOSGameController")
-                    .WithProduct("Xbox Wireless Controller"));
-
-            InputSystem.RegisterLayout<DualShock4GampadiOS>("DualShock4GampadiOS",
-                matches: new InputDeviceMatcher()
-                    .WithInterface("iOS")
-                    .WithDeviceClass("iOSGameController")
-                    .WithProduct("DUALSHOCK 4 Wireless Controller"));
-        }
-    }
-}
-#endif // UNITY_EDITOR || UNITY_IOS || UNITY_TVOS
+version https://git-lfs.github.com/spec/v1
+oid sha256:11212550560d23627997b817e2ac63107b94618e2092dc73556c9e30e55a14ad
+size 1193

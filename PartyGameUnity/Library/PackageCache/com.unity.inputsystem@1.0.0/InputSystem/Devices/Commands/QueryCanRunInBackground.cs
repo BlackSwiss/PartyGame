@@ -1,34 +1,3 @@
-using System.Runtime.InteropServices;
-using UnityEngine.InputSystem.Utilities;
-
-namespace UnityEngine.InputSystem.LowLevel
-{
-    /// <summary>
-    /// Queries to see if this device is able to continue to send updates and state changes when the application is not if focus.
-    /// </summary>
-    /// <seealso cref="InputDevice.canRunInBackground"/>
-    [StructLayout(LayoutKind.Explicit, Size = InputDeviceCommand.kBaseCommandSize + sizeof(bool))]
-    public struct QueryCanRunInBackground : IInputDeviceCommandInfo
-    {
-        public static FourCC Type => new FourCC('Q', 'R', 'I', 'B');
-
-        internal const int kSize = InputDeviceCommand.kBaseCommandSize;
-
-        [FieldOffset(0)]
-        public InputDeviceCommand baseCommand;
-
-        [FieldOffset(InputDeviceCommand.kBaseCommandSize)]
-        public bool canRunInBackground;
-
-        public FourCC typeStatic => Type;
-
-        public static QueryCanRunInBackground Create()
-        {
-            return new QueryCanRunInBackground
-            {
-                baseCommand = new InputDeviceCommand(Type, kSize),
-                canRunInBackground = false
-            };
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb033bd319cb92896fc949892cc42a08f66457b4a08e67c9c493e0942a5d37b6
+size 1150

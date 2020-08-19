@@ -1,27 +1,3 @@
-#if UNITY_EDITOR
-using System;
-
-namespace UnityEngine.InputSystem.Editor
-{
-    /// <summary>
-    /// Persistent state for <see cref="InputControlPathEditor"/>.
-    /// </summary>
-    /// <remarks>
-    /// This class encapsulates the viewing state for an input control picker.
-    /// </remarks>
-    [Serializable]
-    public class InputControlPickerState
-    {
-        internal AdvancedDropdownState advancedDropdownState => m_AdvancedDropdownState;
-
-        internal bool manualPathEditMode
-        {
-            get => m_ManualPathEditMode;
-            set => m_ManualPathEditMode = value;
-        }
-
-        [SerializeField] private AdvancedDropdownState m_AdvancedDropdownState = new AdvancedDropdownState();
-        [SerializeField] private bool m_ManualPathEditMode;
-    }
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:1c6fd9d0d434cbb14dddfff9b339cea1f986893a2eeb7a485766e58b0c257cfd
+size 788
